@@ -1,4 +1,6 @@
 # Homebrew OSX Binaries
+**Please submit PR in [monorepo](https://github.com/athrunsun/homebrew_monorepo).**
+
 These formulae provide binary installs for software that,
 * Is not available in other package managers.
 * Has a lot of dependencies thus is time-consuming when installing. E.g. [mpv](https://github.com/Homebrew/homebrew-core/blob/master/Formula/mpv.rb).
