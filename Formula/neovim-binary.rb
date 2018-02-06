@@ -1,15 +1,19 @@
 class NeovimBinary < Formula
     desc "Literally the future of vim."
-    homepage "https://neovim.io/"
-    version "0.2.0"
-
+    homepage "https://github.com/neovim/neovim"
+    version "0.2.2"
     url "https://github.com/neovim/neovim/releases/download/v#{version}/nvim-macos.tar.gz"
-    sha256 "0526a5557668924fd4fe972b1dc953c1e40978ceac65a6e9f4a27a25f2cbcfb3"
+    sha256 "18c3d048d8670515be9255d8b4a3c3b9f869f0cf4a40538fe7b85214edae44b3"
 
     bottle :unneeded
 
     def install
         libexec.install Dir["*"]
         bin.install_symlink Dir["#{libexec}/bin/*"]
+    end
+
+    def caveats; <<~EOS
+        Executable is linked as "nvim".
+        EOS
     end
 end
