@@ -1,17 +1,10 @@
 class V2rayCore < Formula
     desc "A platform for building proxies to bypass network restrictions."
-    homepage "https://github.com/v2ray/v2ray-core https://www.v2ray.com"
-    version "3.14"
+    homepage "https://github.com/v2ray/v2ray-core"
+    version "3.37"
 
-    option "with-mirror", "Download installation archive from https://www.v2ray.com/download, use this option if you're in mainland China for a faster downloading speed."
-
-    if build.with? "mirror"
-        url "https://www.v2ray.com/ipns/QmdtMuAhEUPFX9NQiGhRj2zhS1oEA76SXNDnZRHqivjMwR/Core-v#{version}/v2ray-macos.zip"
-    else
-        url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-macos.zip"
-    end
-
-    sha256 "8ac788cab01289ebf964c724d35eeb9c458a370e204956cf1a2ca3f5c433e961"
+    url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-macos.zip"
+    sha256 "aebf36b20e9b3e1a5897de7367b9e6974ffbe3198cd2d93a0bf27dd96bb0755c"
 
     bottle :unneeded
 
@@ -25,7 +18,7 @@ class V2rayCore < Formula
 
     def caveats; <<~EOS
         Executable linked as "v2ray" and "v2ctl".
-        "geoip.dat" and "geosite.dat" are also installed by symlink.
+        "geoip.dat" and "geosite.dat" are also installed as symlinks.
         EOS
     end
 end
