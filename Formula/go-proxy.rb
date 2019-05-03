@@ -1,10 +1,10 @@
 class GoProxy < Formula
     desc "A high performance HTTP(S), websocket, TCP, UDP,Secure DNS, Socks5 proxy server implemented by golang. Supports chain-style proxies,nat forwarding in different lan,TCP/UDP port forwarding, SSH forwarding."
     homepage "https://github.com/snail007/goproxy"
-    version "6.5"
+    version "7.3"
 
     url "https://github.com/snail007/goproxy/releases/download/v#{version}/proxy-darwin-amd64.tar.gz"
-    sha256 "134ece99bfb5b9be0e387e2884519df39debe4cb2421d96a8c965614dbca0ba7"
+    sha256 "d4142b13fe75f5bf75b142722fcd6fefdfbfe05e5c5e5e8da00e3cd45c572a97"
 
     bottle :unneeded
 
