@@ -4,7 +4,7 @@ class V2rayCore < Formula
     version "4.21.3"
 
     url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-macos.zip"
-    sha256 "924C4348812B6A270344DABFF17EAF10E2062CE5DD9B2EEE095FE1F0491A29E0"
+    sha256 "924c4348812b6a270344dabff17eaf10e2062ce5dd9b2eee095fe1f0491a29e0"
 
     bottle :unneeded
 
