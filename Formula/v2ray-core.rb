@@ -1,17 +1,10 @@
 class V2rayCore < Formula
     desc "A platform for building proxies to bypass network restrictions."
     homepage "https://github.com/v2ray/v2ray-core"
-    version "4.12.0"
+    version "4.21.3"
 
-    option "with-mirror", "Download from https://v2ray.com/download."
-
-    if build.with? "mirror"
-        url "https://v2ray.com/download/Core_v#{version}/v2ray-macos.zip"
-    else
-        url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-macos.zip"
-    end
-
-    sha256 "12bd93005cf5eb4eb9295ccabb43406702da3720d0ebe7c90ca03856dfecaa1e"
+    url "https://github.com/v2ray/v2ray-core/releases/download/v#{version}/v2ray-macos.zip"
+    sha256 "924C4348812B6A270344DABFF17EAF10E2062CE5DD9B2EEE095FE1F0491A29E0"
 
     bottle :unneeded
 
