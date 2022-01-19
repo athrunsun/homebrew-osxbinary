@@ -1,10 +1,10 @@
-class V2rayCore < Formula
-    desc "A platform for building proxies to bypass network restrictions."
+class V2rayCoreArm64 < Formula
+    desc "A platform for building proxies to bypass network restrictions. (ARM64)"
     homepage "https://github.com/v2fly/v2ray-core"
     version "4.44.0"
 
-    url "https://github.com/v2fly/v2ray-core/releases/download/v#{version}/v2ray-macos-64.zip"
-    sha256 "8a97eebf1ccadb6fa82245db23fa62c7857af9cdb2acbf6cb41c552bc502bbb4"
+    url "https://github.com/v2fly/v2ray-core/releases/download/v#{version}/v2ray-macos-arm64-v8a.zip"
+    sha256 "69b5ea46cbd5cc297bb55583d2163f0eaf0aa83164fa511b81ffc6116aea75fd"
 
     bottle :unneeded
 

@@ -1,12 +1,11 @@
 class FfmpegBinary < Formula
-    desc "FFmpeg binary for Mac."
-    homepage "http://www.ffmpegmac.net/"
-    version "3.2.2"
+    desc "FFmpeg Static Builds."
+    homepage "https://www.ffmpeg.org"
+    version "5.0"
 
-    url "http://www.ffmpegmac.net/resources/Lion_Mountain_Lion_Mavericks_Yosemite_El-Captain_08.12.2016.zip"
-    sha256 "f95b3d7bc07e5078bb1100beacdb76a365f0af8a6580a51db7300f4e8502cf8c"
+    url "https://evermeet.cx/ffmpeg/ffmpeg-5.0.7z"
+    sha256 "2492b8d8ab568a719f5b0e2c5b3cd1a457be08a048e97e2c5558ea0816508154"
 
-    bottle :unneeded
     conflicts_with "ffmpeg"
 
     def install
