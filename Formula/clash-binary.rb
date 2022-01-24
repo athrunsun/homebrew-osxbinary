@@ -19,7 +19,6 @@ class ClashBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        print "#{libexec}/clash-darwin-#{@@arch}"
         chmod(0755, "#{libexec}/clash-darwin-#{@@arch}")
         bin.install_symlink("#{libexec}/clash-darwin-#{@@arch}" => "clash")
     end
