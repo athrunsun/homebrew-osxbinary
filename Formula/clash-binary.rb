@@ -19,7 +19,7 @@ class ClashBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink("#{libexec}/clash-darwin-#{@arch}" => "clash")
+        bin.install_symlink("#{libexec}/clash-darwin-#{self.class.arch}" => "clash")
     end
 
     def caveats; <<~EOS
