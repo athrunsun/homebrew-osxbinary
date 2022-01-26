@@ -25,6 +25,7 @@ class PowershellBinary < Formula
 
     def install
         libexec.install Dir["*"]
+        chmod(0755, "#{libexec}/pwsh")
         bin.install_symlink("#{libexec}/pwsh" => "pwsh")
     end
 
