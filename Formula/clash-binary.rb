@@ -27,4 +27,8 @@ class ClashBinary < Formula
         Executable is linked as "clash".
         EOS
     end
+
+    test do
+        system "#{bin}/clash", "-v"
+    end
 end
