@@ -3,13 +3,14 @@ class ClashPremiumBinary < Formula
     homepage "https://github.com/Dreamacro/clash"
     version "2022.05.18"
 
+    @@os = "darwin"
     @@arch = "amd64"
 
     if Hardware::CPU.arm?
         @@arch = "arm64"
     end
 
-    url "https://github.com/Dreamacro/clash/releases/download/premium/clash-darwin-#{@@arch}-#{version}.gz"
+    url "https://github.com/Dreamacro/clash/releases/download/premium/clash-#{@@os}-#{@@arch}-#{version}.gz"
     sha256 "ef109cb353ac0674bcf870f717619dffd2b6c0f70efb602f494e5a03efcfe688"
     
     if Hardware::CPU.arm?
@@ -18,7 +19,7 @@ class ClashPremiumBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        mv("#{libexec}/clash-darwin-#{@@arch}-#{version}", "#{libexec}/clash")
+        mv("#{libexec}/clash-#{@@os}-#{@@arch}", "#{libexec}/clash")
         chmod(0755, "#{libexec}/clash")
         bin.install_symlink("#{libexec}/clash" => "clash")
     end
